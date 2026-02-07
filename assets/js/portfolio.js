@@ -5,12 +5,8 @@
 (function() {
   'use strict';
 
-  // Google Sheets TSV URLs
-  const SHEETS = {
-    transactions: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQdW4--3KMPl6vSJGFY4BdzNxJgbZFMPnfGYSqS7AEox19YzmYQGo5wvKHupYOS1vTO2J6F6oksqzry/pub?gid=0&single=true&output=tsv',
-    holdings: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQdW4--3KMPl6vSJGFY4BdzNxJgbZFMPnfGYSqS7AEox19YzmYQGo5wvKHupYOS1vTO2J6F6oksqzry/pub?gid=1563230874&single=true&output=tsv',
-    sales: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQdW4--3KMPl6vSJGFY4BdzNxJgbZFMPnfGYSqS7AEox19YzmYQGo5wvKHupYOS1vTO2J6F6oksqzry/pub?gid=845485488&single=true&output=tsv'
-  };
+  // Google Sheets TSV URLs (loaded from _config.yml via window.SHEETS)
+  const SHEETS = window.SHEETS || {};
 
   // Cache for fetched data
   let DATA = {

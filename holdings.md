@@ -63,7 +63,7 @@ description: Complete list of portfolio holdings
 
 <script>
 document.addEventListener('DOMContentLoaded', async function() {
-  const HOLDINGS_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQdW4--3KMPl6vSJGFY4BdzNxJgbZFMPnfGYSqS7AEox19YzmYQGo5wvKHupYOS1vTO2J6F6oksqzry/pub?gid=1563230874&single=true&output=tsv';
+  const HOLDINGS_URL = window.SHEETS.holdings;
 
   function parseTSV(tsv) {
     const lines = tsv.trim().split('\n');

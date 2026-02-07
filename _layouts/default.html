@@ -2,6 +2,13 @@
 <html lang="en">
 {% include head.html %}
 <body>
+  <script>
+    window.SHEETS = {
+      transactions: '{{ site.sheets.transactions_tsv }}',
+      holdings: '{{ site.sheets.holdings_tsv }}',
+      sales: '{{ site.sheets.sales_tsv }}'
+    };
+  </script>
   {% include header.html %}
 
   <main class="container">

@@ -4,6 +4,17 @@ description: Track your crypto cash flow positions, yields, and performance
 baseurl: "/crypto-cash-flow-portfolio" # subpath of your site, e.g. /portfolio
 url: "https://futuregadgettemplates.github.io" # the base hostname & protocol for your site
 
+# Google Sheets URLs
+sheets:
+  # Editable spreadsheet (for admin page)
+  edit_url: "https://docs.google.com/spreadsheets/d/1ixld4bbNNXkF3b9kaXjoIZ5Aq6bV2m_HXL70A_cZ40M/edit?usp=sharing"
+  # Published HTML view (for sharing)
+  published_url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQdW4--3KMPl6vSJGFY4BdzNxJgbZFMPnfGYSqS7AEox19YzmYQGo5wvKHupYOS1vTO2J6F6oksqzry/pubhtml"
+  # TSV data feeds
+  transactions_tsv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQdW4--3KMPl6vSJGFY4BdzNxJgbZFMPnfGYSqS7AEox19YzmYQGo5wvKHupYOS1vTO2J6F6oksqzry/pub?gid=0&single=true&output=tsv"
+  holdings_tsv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQdW4--3KMPl6vSJGFY4BdzNxJgbZFMPnfGYSqS7AEox19YzmYQGo5wvKHupYOS1vTO2J6F6oksqzry/pub?gid=1563230874&single=true&output=tsv"
+  sales_tsv: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQdW4--3KMPl6vSJGFY4BdzNxJgbZFMPnfGYSqS7AEox19YzmYQGo5wvKHupYOS1vTO2J6F6oksqzry/pub?gid=845485488&single=true&output=tsv"
+
 # Build settings
 markdown: kramdown
 highlighter: rouge

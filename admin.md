@@ -10,13 +10,13 @@ description: Manage your portfolio data
 </header>
 
 <div class="stats-grid">
-  <a href="https://docs.google.com/spreadsheets/d/1ixld4bbNNXkF3b9kaXjoIZ5Aq6bV2m_HXL70A_cZ40M/edit?usp=sharing" target="_blank" class="stat-card admin-link">
+  <a href="{{ site.sheets.edit_url }}" target="_blank" class="stat-card admin-link">
     <span class="stat-label">Edit Data</span>
     <span class="stat-value" style="font-size: 1.25rem;">Open Google Sheets</span>
     <small style="color: var(--color-gray-500);">Add, edit, or remove positions</small>
   </a>
 
-  <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQdW4--3KMPl6vSJGFY4BdzNxJgbZFMPnfGYSqS7AEox19YzmYQGo5wvKHupYOS1vTO2J6F6oksqzry/pubhtml" target="_blank" class="stat-card admin-link">
+  <a href="{{ site.sheets.published_url }}" target="_blank" class="stat-card admin-link">
     <span class="stat-label">View Only</span>
     <span class="stat-value" style="font-size: 1.25rem;">Published Sheet</span>
     <small style="color: var(--color-gray-500);">Share this link with others</small>
